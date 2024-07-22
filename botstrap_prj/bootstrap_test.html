@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Example <link> tag with the path -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Example <script> tag with the path -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Help
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Technical documentation</a></li>
+                        <li><a class="dropdown-item" href="#">Talk to us</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+<!--                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button type="button" class="btn btn-info">Info</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<form>
+    <div class="mb-3" style="margin: 30px">
+        <label for="name" class="form-label"><b>Full name</b></label>
+        <input type="text" class="form-control" id="name" style="width: 500px;"></p>
+
+    </div>
+    <div class="mb-3">
+        <label for="reason" class="form-label"><b>Reason for contacting us:</b></label>
+        <input type="text" class="form-control" id="reason" style="width: 500px;"></p>
+
+    </div>
+    <div class="dropdown">
+        <select id="cars" class="btn btn-secondary dropdown-toggle" style="background-color: rgb(255, 255, 255);color: black; text-align: center; width: 250px;" >
+            <option value="billing" selected style=" text-align: left;">Billing</option>
+            <option value="techsupport" style=" text-align: left;">Technical Support</option>
+            <option value="feedback" style=" text-align: left;">Complaints and Feedback</option>
+        </select>
+
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Billing</a></li>
+            <li><a class="dropdown-item" href="#">Technical Support</a></li>
+            <li><a class="dropdown-item" href="#">Complaints and Feedback</a></li>
+        </ul>
+    </div>
+    <div class="mb-3">
+        <textarea name="message" id="message" cols="65" rows="10" style="resize: none;"></textarea>
+    </div>
+    <button type="reset" class="btn btn-secondary">RESET</button>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label></p>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 500px;">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+<h1>Testing Bootstrap</h1>
+<p>Verifying bootstrap functionality</p>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-warning">Warning</button>
+</body>
+</html>
